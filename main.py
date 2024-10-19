@@ -39,7 +39,7 @@ class BudgetTrackerApp:
         ctk.set_default_color_theme("dark-blue")
 
         try:
-            self.db = create_or_open_database("budget_tracker.db")
+            self.db = create_or_open_database("data/budget_tracker.db")
         except sqlite3.Error as e:
             print(f"Database connection error: {e}")
             return
