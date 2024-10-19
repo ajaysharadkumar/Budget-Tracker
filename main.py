@@ -34,7 +34,7 @@ class BudgetTrackerApp:
         self.root.title("Budget Tracker")
         self.root.geometry("1000x600")
 
-        self.root.iconbitmap("Icon.ico")
+        self.root.iconbitmap("src/assets/icon.ico")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("dark-blue")
 
