@@ -1,8 +1,6 @@
-from .authentication_controller import AuthenticationController
-from .transaction_controller import TransactionController
-from .visualization_controller import VisualizationController
-from .summary_controller import SummaryController
-from .budget_analysis_controller import BudgetAnalysisController
+from src.controller.auth_controller import AuthenticationController
+from src.controller.transaction_controller import TransactionController
+from src.controller.visualization_controller import VisualizationController
 
 
 class BudgetTrackerController:
@@ -13,7 +11,6 @@ class BudgetTrackerController:
         self.transaction_controller = TransactionController(model.transaction, view.income_view, view.expense_view)
         self.visualization_controller = VisualizationController(model.transaction, view.visualization_view)
         self.summary_controller = SummaryController(model.transaction, view.summary_view)
-        self.budget_analysis_controller = BudgetAnalysisController(model.transaction, view.budget_analysis_view)
 
         self.setup_event_handlers()
 

@@ -1,6 +1,6 @@
-from .database import BudgetTrackerDatabase
-from .transaction import Transaction
-from .user import User
+from src.utils.database import BudgetTrackerDatabase
+from src.model.transaction_model import Transaction
+from src.model.user_model import User
 
 class BudgetTrackerModel:
     def __init__(self):
